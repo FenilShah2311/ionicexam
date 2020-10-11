@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>apidata</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid >
+  <ion-row>
+    <ion-col size="2">Id</ion-col>
+    <ion-col size="6">Email</ion-col>
+    <ion-col size="2">Lastname</ion-col>
+  </ion-row>
+  <ion-row *ngFor="let st of studentapi">
+    
+    <ion-col size="2">{{st.id}}</ion-col>
+    <ion-col size="6">{{st.email}}</ion-col>
+    <ion-col size="2">{{st.first_name}}</ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
